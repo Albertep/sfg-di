@@ -1,20 +1,21 @@
 package Tutorial.sfgdi.Controller;
 
-import Tutorial.sfgdi.Services.Greetins;
+import Tutorial.sfgdi.Services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class SetterInyectedController {
 
-    private Greetins greetins;
+    private GreetingService greetingService;
 
     public String getGreetins() {
-        return greetins.greetings();
+        return greetingService.greetings();
     }
-
+    @Qualifier("setterInyectedService")
     @Autowired
-    public void setGreetins(Greetins greetins) {
-        this.greetins = greetins;
+    public void setGreetins(GreetingService greetingService) {
+        this.greetingService = greetingService;
     }
 }

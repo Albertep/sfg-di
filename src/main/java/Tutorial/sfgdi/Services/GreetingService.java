@@ -1,5 +1,5 @@
 package Tutorial.sfgdi.Services;
 
-public interface Greetins {
+public interface GreetingService {
     String greetings();
 }

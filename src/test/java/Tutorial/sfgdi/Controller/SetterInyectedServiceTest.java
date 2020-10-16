@@ -1,17 +1,15 @@
 package Tutorial.sfgdi.Controller;
 
-import Tutorial.sfgdi.Services.GreetinsImpl;
+import Tutorial.sfgdi.Services.ConstructorInyectedService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class SetterInyectedControllerTest {
+class SetterInyectedServiceTest {
 SetterInyectedController setterInyectedController;
     @BeforeEach
     void setUp() {
         setterInyectedController=new SetterInyectedController();
-        setterInyectedController.setGreetins(new GreetinsImpl());
+        setterInyectedController.setGreetins(new ConstructorInyectedService());
     }
 
     @Test
