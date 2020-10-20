@@ -1,6 +1,6 @@
 package Tutorial.sfgdi.Controller;
 
-import Tutorial.Services.ConstructorInyectedService;
+import Tutorial.sfgdi.Services.ConstructorInyectedService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

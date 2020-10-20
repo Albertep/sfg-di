@@ -1,6 +1,6 @@
-package Tutorial.sfgdi.Controller;
+/*package Tutorial.sfgdi.Controller;
 
-import Tutorial.Services.GreetingService;
+import Tutorial.sfgdi.Services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
@@ -15,3 +15,4 @@ public class I18nController {
         return greetingService.greetings();
     }
 }
+*/
