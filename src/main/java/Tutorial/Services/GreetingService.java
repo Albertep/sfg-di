@@ -1,4 +1,4 @@
-package Tutorial.sfgdi.Services;
+package Tutorial.Services;
 
 public interface GreetingService {
     String greetings();
