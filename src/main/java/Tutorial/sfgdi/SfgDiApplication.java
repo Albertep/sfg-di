@@ -1,6 +1,7 @@
 package Tutorial.sfgdi;
 
 import Tutorial.sfgdi.ConnectionDb.ConnectionDb;
+import Tutorial.sfgdi.ConnectionDb.JmsBroker;
 import Tutorial.sfgdi.Controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -41,6 +42,11 @@ public class SfgDiApplication {
 		System.out.println(connectionDb.getUser());
 		System.out.println(connectionDb.getPass());
 		System.out.println(connectionDb.getUrl());
+		System.out.println("-----------------------------------------------------------------Base de Datos JMS-----------------------------------------------------------------------------------------");
+		JmsBroker jmsBroker=ctx.getBean(JmsBroker.class);
+		System.out.println(jmsBroker.getUser());
+		System.out.println(jmsBroker.getPass());
+		System.out.println(jmsBroker.getUrl());
 	}
 
 }
