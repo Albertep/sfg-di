@@ -1,5 +1,6 @@
 package Tutorial.sfgdi;
 
+import Tutorial.sfgdi.ConnectionDb.ConnectionDb;
 import Tutorial.sfgdi.Controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -35,6 +36,11 @@ public class SfgDiApplication {
 		System.out.println("---------ConstructorInyectedController");
 		ConstructorInyectedController constructor=(ConstructorInyectedController) ctx.getBean("constructorInyectedController");
 		System.out.println(constructor.getGreetins());
+		System.out.println("-----------------------------------------------------------------Base de Datos-----------------------------------------------------------------------------------------");
+		ConnectionDb connectionDb=ctx.getBean(ConnectionDb.class);
+		System.out.println(connectionDb.getUser());
+		System.out.println(connectionDb.getPass());
+		System.out.println(connectionDb.getUrl());
 	}
 
 }
