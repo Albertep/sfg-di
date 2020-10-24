@@ -1,0 +1,36 @@
+# Esto es un comenatrio
+
+name:  Alberte
+
+names: #Coment
+    -John
+    -Paul
+    -Ringo
+
+pound_sign: "#"
+
+book:
+    author:  Joe Buck
+    publisher:  rendom house
+
+truth:  yes
+
+anothertrue:  true
+
+more_true:  True
+
+false:  no #No, false, False
+
+string_val: "This is it's quote"
+
+colon_string: "my coureses: one two three"
+
+include_new_lines:  |
+  ASAs DAD ASFSA
+  fdgfg asfda sdsa
+  asdfd fgfgt bmnds
+
+ignore_new_lines: >
+  this is
+  just one long
+  string

@@ -1,0 +1,11 @@
+jms:
+  username: JMS
+  password: JmsPass
+  Url: URLJMS
+
+--- #Tres - Se refieren a un nuevo archivo //dentro de un archivo se pueden crear multiples 'archivos'
+spring:
+  profiles:  de
+jms:
+  username: JMS -----EN ALEMAN ---- Con YAML
+

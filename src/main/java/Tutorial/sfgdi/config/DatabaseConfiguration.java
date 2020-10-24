@@ -12,15 +12,18 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@PropertySource({"classpath:datasource.properties","classpath:jms.properties"})
+//@PropertySource({"classpath:datasource.properties","classpath:jms.properties"})
 /*@PropertySources({
         @PropertySource("classpath:datasource.properties"),
         @PropertySource("classpath:datasource.properties")
 })*/
+
 public class DatabaseConfiguration {
 
-    @Autowired
+   /* @Autowired
     Environment enviroment;
+
+    */
 
     @Value("${Tutorial.username}")
     private String user;
@@ -46,7 +49,7 @@ public class DatabaseConfiguration {
         dataSourceFake.setPass(password);
         dataSourceFake.setUrl(dburl);
         dataSourceFake.setUser(user);
-        dataSourceFake.setUser(enviroment.getProperty("USERNAME"));
+        /*dataSourceFake.setUser(enviroment.getProperty("USERNAME"));*/
         return dataSourceFake;
 
     }
